@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99898F27-48B7-4ADF-953B-DEE56D41C295}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IOCL_MARINE_NEW</RootNamespace>
+    <AssemblyName>IOCL_MARINE_NEW</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Average_Discharge_Time_graph.aspx" />
+    <Content Include="Crude_Unloaded_Monthly_graph.aspx" />
+    <Content Include="Dashboard_layout\ADD_USER.aspx" />
+    <Content Include="Dashboard_layout\Change_Password.aspx" />
+    <Content Include="Dashboard_layout\Crude_Unloaded_Monthly_.aspx" />
+    <Content Include="Dashboard_layout\Crude_Unloaded_Yearly_.aspx" />
+    <Content Include="Dashboard_layout\index.aspx" />
+    <Content Include="Dashboard_layout\Ocean_Loss_Monthly_.aspx" />
+    <Content Include="Dashboard_layout\Profile_setting.aspx" />
+    <Content Include="Dashboard_layout\Tanker_Milestone_.aspx" />
+    <Content Include="Dashboard_layout\Total_Tanker_Vlcc_.aspx" />
+    <Content Include="Dashboard_layout\Turn_Arround_Time_.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="LOGIN.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="Ocean_Loss_Monthly_graph.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Dashboard_layout\assets\fonts\fa-solid-900.eot" />
+    <Content Include="Dashboard_layout\assets\fonts\fa-solid-900.ttf" />
+    <Content Include="Dashboard_layout\assets\fonts\fa-solid-900.woff" />
+    <Content Include="Dashboard_layout\assets\fonts\fa-solid-900.woff2" />
+    <Content Include="Dashboard_layout\assets\fonts\fa-solid-900d41d.eot" />
+    <Content Include="Dashboard_layout\assets\fonts\ionicons.eot" />
+    <Content Include="Dashboard_layout\assets\fonts\ionicons.ttf" />
+    <Content Include="Dashboard_layout\assets\fonts\ionicons.woff" />
+    <Content Include="Dashboard_layout\assets\fonts\Linearicons-Free.woff2" />
+    <Content Include="Dashboard_layout\assets\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Dashboard_layout\DashboardMaster.Master" />
+    <Content Include="fonts\fontawesome-webfontba72ba72.eot" />
+    <Content Include="fonts\fontawesome-webfontba72ba72.ttf" />
+    <Content Include="fonts\fontawesome-webfontba72ba72.woff" />
+    <Content Include="fonts\fontawesome-webfontd41dd41d.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="Properties\PublishProfiles\krishna_swain.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Tanker_Milestone_graph.aspx" />
+    <Content Include="Total_Tanker_Vlcc_graph.aspx" />
+    <Content Include="Turn_Arround_Time_graph.aspx" />
+    <Content Include="WEBSITE_MASTER.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\CALENDER_UI.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\fractionslider.css" />
+    <Content Include="css\icons\icons\back_pattern.png" />
+    <Content Include="css\icons\icons\black_mamba.png" />
+    <Content Include="css\icons\icons\black_thread.png" />
+    <Content Include="css\icons\icons\checkered_pattern.png" />
+    <Content Include="css\icons\icons\crossed.png" />
+    <Content Include="css\icons\icons\diagmonds.png" />
+    <Content Include="css\icons\icons\diamond_upholstery.png" />
+    <Content Include="css\icons\icons\fabric.png" />
+    <Content Include="css\icons\icons\graphy.png" />
+    <Content Include="css\icons\icons\lyonnette.png" />
+    <Content Include="css\icons\icons\subtlenet2.png" />
+    <Content Include="css\icons\icons\triangles.png" />
+    <Content Include="css\icons\icons\vichy.png" />
+    <Content Include="css\icons\icons\woods.png" />
+    <Content Include="css\icons\switcher.png" />
+    <Content Include="css\layout\wide.css" />
+    <Content Include="css\magnified.css" />
+    <Content Include="css\style-fraction.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\switcher.css" />
+    <Content Include="Dashboard_layout\assets\fonts\AD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AX.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\AZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BB.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BJ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BV.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\BZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CV.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CX.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\CZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\DE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\DJ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\DK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\DM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\DO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\DZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\EC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\EE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\EG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ER.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ES.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ET.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\EU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\fa-solid-900.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\FI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\FJ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\FK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\FM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\FO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\FR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GB-ENG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GB-NIR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GB-SCT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GB-WLS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GB-ZET.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GB.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GP.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GQ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\GY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\HK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\HM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\HN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\HR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\HT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\HU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ID.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ionicons.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IQ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\IT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\JE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\JM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\JO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\JP.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KP.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\KZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LB.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LGBT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LV.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\LY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ME.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ML.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MP.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MQ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MV.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MX.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\MZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NP.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\NZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\OM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\PY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\QA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\RE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\RO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\RS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\RU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\RW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SB.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SJ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ST.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SV.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SX.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\SZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TD.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TH.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TJ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TL.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TO.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TR.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TV.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TW.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\TZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\UA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\UG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\UM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\US-CA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\US.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\UY.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\UZ.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VC.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VG.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VI.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VN.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\VU.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\WF.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\WS.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\XK.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\YE.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\YT.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ZA.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ZM.svg" />
+    <Content Include="Dashboard_layout\assets\fonts\ZW.svg" />
+    <Content Include="Dashboard_layout\assets\images\ajax-loader.gif" />
+    <Content Include="Dashboard_layout\assets\images\avatars\1.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\10.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\12.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\2.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\3.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\4.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\5.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\6.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\7.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\8.jpg" />
+    <Content Include="Dashboard_layout\assets\images\avatars\9.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract1.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract10.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract2.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract3.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract4.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract5.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\abstract6.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\city1.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\city2.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\city3.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\city4.jpg" />
+    <Content Include="Dashboard_layout\assets\images\dropdown-header\city5.jpg" />
+    <Content Include="Dashboard_layout\assets\images\icons-rtl.gif" />
+    <Content Include="Dashboard_layout\assets\images\icons.gif" />
+    <Content Include="Dashboard_layout\assets\images\iocl_banner.jpg" />
+    <Content Include="Dashboard_layout\assets\images\loading.gif" />
+    <Content Include="Dashboard_layout\assets\images\logo-inverse.png" />
+    <Content Include="Dashboard_layout\assets\images\logo.png" />
+    <Content Include="Dashboard_layout\assets\images\originals\city.jpg" />
+    <Content Include="Dashboard_layout\assets\images\originals\citydark.jpg" />
+    <Content Include="Dashboard_layout\assets\images\originals\citynights.jpg" />
+    <Content Include="Dashboard_layout\assets\images\originals\fence-small.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract1.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract10.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract2.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract3.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract4.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract5.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract6.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract7.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract8.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\abstract9.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\city1.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\city2.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\city3.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\city4.jpg" />
+    <Content Include="Dashboard_layout\assets\images\sidebar\city5.jpg" />
+    <Content Include="Dashboard_layout\assets\images\vline-rtl.gif" />
+    <Content Include="Dashboard_layout\assets\images\vline.gif" />
+    <Content Include="Dashboard_layout\assets\jquery_2_min.js" />
+    <Content Include="Dashboard_layout\assets\scripts\main.d810cf0ae7f39f28f336.js" />
+    <Content Include="Dashboard_layout\Average_Discharge_Time_.aspx" />
+    <Content Include="Dashboard_layout\main.d810cf0ae7f39f28f336.css" />
+    <Content Include="fonts\fontawesome-webfontba72ba72.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\cal.png" />
+    <Content Include="images\iocl.gif" />
+    <Content Include="images\ui-icons_222222_256x240.png" />
+    <Content Include="images\ui-icons_454545_256x240.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\CALENDER_JQUERY.js" />
+    <Content Include="js\CALENDER_JQUERY_MIN.js" />
+    <Content Include="js\Canvas_.js" />
+    <Content Include="js\chart_min.js" />
+    <Content Include="js\jflickrfeed.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-scrolltofixed-min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.fractionslider.js" />
+    <Content Include="js\jquery.gmap.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.jcarousel.js" />
+    <Content Include="js\jquery.magnific-popup.min.js" />
+    <Content Include="js\jquery.smartmenus.bootstrap.min.js" />
+    <Content Include="js\jquery.smartmenus.min.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\jquery_3_min.js" />
+    <Content Include="js\json2_min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\moment_2.js" />
+    <Content Include="js\retina-1.1.0.min.js" />
+    <Content Include="js\styleswitch.js" />
+    <Content Include="js\swipe.js" />
+    <Content Include="js\view.contact.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\DAL.cs" />
+    <Compile Include="AppCode\DB_CON.cs" />
+    <Compile Include="AppCode\Obj_Layer.cs" />
+    <Compile Include="Average_Discharge_Time_graph.aspx.cs">
+      <DependentUpon>Average_Discharge_Time_graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Average_Discharge_Time_graph.aspx.designer.cs">
+      <DependentUpon>Average_Discharge_Time_graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Crude_Unloaded_Monthly_graph.aspx.cs">
+      <DependentUpon>Crude_Unloaded_Monthly_graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Crude_Unloaded_Monthly_graph.aspx.designer.cs">
+      <DependentUpon>Crude_Unloaded_Monthly_graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\ADD_USER.aspx.cs">
+      <DependentUpon>ADD_USER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\ADD_USER.aspx.designer.cs">
+      <DependentUpon>ADD_USER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Average_Discharge_Time_.aspx.cs">
+      <DependentUpon>Average_Discharge_Time_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Average_Discharge_Time_.aspx.designer.cs">
+      <DependentUpon>Average_Discharge_Time_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Crude_Unloaded_Monthly_.aspx.cs">
+      <DependentUpon>Crude_Unloaded_Monthly_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Crude_Unloaded_Monthly_.aspx.designer.cs">
+      <DependentUpon>Crude_Unloaded_Monthly_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Crude_Unloaded_Yearly_.aspx.cs">
+      <DependentUpon>Crude_Unloaded_Yearly_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Crude_Unloaded_Yearly_.aspx.designer.cs">
+      <DependentUpon>Crude_Unloaded_Yearly_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\DashboardMaster.Master.cs">
+      <DependentUpon>DashboardMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\DashboardMaster.Master.designer.cs">
+      <DependentUpon>DashboardMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Ocean_Loss_Monthly_.aspx.cs">
+      <DependentUpon>Ocean_Loss_Monthly_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Ocean_Loss_Monthly_.aspx.designer.cs">
+      <DependentUpon>Ocean_Loss_Monthly_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Profile_setting.aspx.cs">
+      <DependentUpon>Profile_setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Profile_setting.aspx.designer.cs">
+      <DependentUpon>Profile_setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Tanker_Milestone_.aspx.cs">
+      <DependentUpon>Tanker_Milestone_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Tanker_Milestone_.aspx.designer.cs">
+      <DependentUpon>Tanker_Milestone_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Total_Tanker_Vlcc_.aspx.cs">
+      <DependentUpon>Total_Tanker_Vlcc_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Total_Tanker_Vlcc_.aspx.designer.cs">
+      <DependentUpon>Total_Tanker_Vlcc_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_layout\Turn_Arround_Time_.aspx.cs">
+      <DependentUpon>Turn_Arround_Time_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_layout\Turn_Arround_Time_.aspx.designer.cs">
+      <DependentUpon>Turn_Arround_Time_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.aspx.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LOGIN.aspx.designer.cs">
+      <DependentUpon>LOGIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ocean_Loss_Monthly_graph.aspx.cs">
+      <DependentUpon>Ocean_Loss_Monthly_graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ocean_Loss_Monthly_graph.aspx.designer.cs">
+      <DependentUpon>Ocean_Loss_Monthly_graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tanker_Milestone_graph.aspx.cs">
+      <DependentUpon>Tanker_Milestone_graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tanker_Milestone_graph.aspx.designer.cs">
+      <DependentUpon>Tanker_Milestone_graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Total_Tanker_Vlcc_graph.aspx.cs">
+      <DependentUpon>Total_Tanker_Vlcc_graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Total_Tanker_Vlcc_graph.aspx.designer.cs">
+      <DependentUpon>Total_Tanker_Vlcc_graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Turn_Arround_Time_graph.aspx.cs">
+      <DependentUpon>Turn_Arround_Time_graph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Turn_Arround_Time_graph.aspx.designer.cs">
+      <DependentUpon>Turn_Arround_Time_graph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEBSITE_MASTER.Master.cs">
+      <DependentUpon>WEBSITE_MASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEBSITE_MASTER.Master.designer.cs">
+      <DependentUpon>WEBSITE_MASTER.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1142</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1142/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WEBSITE_MASTER.master.cs" Inherits="IOCL_MARINE_NEW.WEBSITE_MASTER" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>IOCL</title>
+	<meta name="description" content="" />
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins" />
+    <link rel="stylesheet" href="css/layout/wide.css" data-name="layout" />
+
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
+    <script src="js/jquery_3_min.js"></script>
+    <script src="js/json2_min.js"></script>
+    <script src="js/moment_2.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        table td,th{font-weight:700 !important;text-align:center !important}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header id="header" >
+        <div id="top-bar">
+            <div class="container">
+               <%-- <div class="row">
+                    <div class="col-sm-7 hidden-xs top-info">
+                        <span><i class="fa fa-phone"></i>Phone: (123) 456-7890</span>
+                        <span><i class="fa fa-envelope"></i>Email: mail@example.com</span>
+                    </div>
+                    <div class="col-sm-5 top-info">
+                        <ul>
+                            <li><a href="#" class="my-tweet"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="my-facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="my-skype"><i class="fa fa-skype"></i></a></li>
+                            <li><a href="#" class="my-pint"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" class="my-rss"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#" class="my-google"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>--%>
+            </div>
+        </div>
+        <!-- LOGO bar -->
+        <div id="logo-bar" class="clearfix" style="background:url(images/bg.jpg);background-size:100% 100%">
+            <!-- Container -->
+            <div class="container">
+                <div class="row">
+                    <!-- Logo / Mobile Menu -->
+                    <div class="col-xs-12">
+                        <div id="logo">
+                            
+                            <h1><a href="#"><img src="images/iocl.gif" alt="Eve"  /></a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Container / End -->
+        </div>
+        <!--LOGO bar / End-->
+
+        <!-- Navigation
+================================================== -->
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Default.aspx">Crude Unloaded Yearly</a></li>
+                            <li><a href="Crude_Unloaded_Monthly_graph.aspx">Crude Unloaded Monthly</a></li>
+                            <li><a href="Average_Discharge_Time_graph.aspx">Average Discharge Time graph</a></li>
+                            <li><a href="Tanker_Milestone_graph.aspx">Tanker Milestone</a></li>
+                            <li><a href="Turn_Arround_Time_graph.aspx">Turn Arround Time</a></li>
+                            <li><a href="Ocean_Loss_Monthly_graph.aspx">Ocean Loss</a></li>
+                            <li><a href="Total_Tanker_Vlcc_graph.aspx">VLCC</a></li>
+                            <li><a href="LOGIN.aspx">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.row -->
+            </div><!--/.container -->
+        </div>
+    </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+	<!--start footer-->
+    
+	<!--end footer-->
+	
+
+
+    </form>
+     
+</body>
+</html>
